@@ -1,5 +1,5 @@
 # useful_ubuntu
-### Merge pdf files
+## Merge pdf files
 Ghostscript is a package (available by default in Ubuntu) that enables you to view or print PostScript and PDF files to other formats, or to convert those files to other formats.
 To use Ghostscript to combine PDF files, type something like the following:
 
@@ -23,3 +23,12 @@ gs         starts the Ghostscript program.
 ```
 
 ref: [https://askubuntu.com/a/257170/996807](https://askubuntu.com/a/257170/996807)
+
+## Use python virtualenv with jupyter notebook
+Create the python virtual environment, activate and install `ipykernal`
+```bash
+python3 -m venv ./venv_name
+source ./venv_name/bin/activate
+pip install ipykernal
+python3 -m ipykernel install --user --name=venv_name
+```
