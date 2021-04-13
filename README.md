@@ -32,3 +32,14 @@ source ./venv_name/bin/activate
 pip install ipykernal
 python3 -m ipykernel install --user --name=venv_name
 ```
+
+# Image and videos
+## Convert images sequences to videos
+```bash
+ffmpeg -framerate 20 -i %06d.png -codec copy output.mp4
+```
+## Convert videos to images
+```bash
+# extract every 1 second
+ffmpeg -i video.MP4 -vf fps=1 %6d.png
+```
