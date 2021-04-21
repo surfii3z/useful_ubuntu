@@ -43,3 +43,8 @@ ffmpeg -framerate 20 -i %06d.png -codec copy output.mp4
 # extract every 1 second
 ffmpeg -i video.MP4 -vf fps=1 %6d.png
 ```
+
+## Access ubuntu workstations in the local network
+```bash
+ssh <username>@<computer_name>.local
+```
